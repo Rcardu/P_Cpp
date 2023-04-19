@@ -7,6 +7,7 @@
 #include"Algorithm//shadowPaths2.cpp"
 #include"Algorithm//AppendSwitchWithInteger.cpp"
 #include"Algorithm//TransactionalFriendlyTreeSet.cpp"
+#include"Algorithm//knapsack_01.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -14,7 +15,8 @@
 //void shadowFormat();
 //void shadow2Format();
 //void AppendFormat();
-void TransactionalFormat();
+//void TransactionalFormat();
+void packFormat();
 
 int main(){
     //S_and_T();
@@ -24,7 +26,8 @@ int main(){
     //shadowFormat();
     //shadow2Format();
     //AppendFormat();
-    TransactionalFormat();
+    //TransactionalFormat();
+    packFormat();
 
     while(getchar()!='\n')
     continue;
