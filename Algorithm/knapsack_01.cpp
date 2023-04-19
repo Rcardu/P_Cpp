@@ -46,6 +46,12 @@ class  knapsack_01{
       //可知当放入物品0时不论背包现在的容量时多少，价值都是15
       //但如果背包自身的容量j<weight[0]时，他就装不下第0个物品，价值也就是0
       //j>=weight时，可以装下，价值也就是value[0];
+       /*                  背包容量为j
+       有i个物品    0   1   2   3   4
+       物品0        0   15  15  15  15  
+       物品1        0   15  15  20  35
+       物品2        0   15  15  20  35
+       */
 
       int knapsack_01i(vector<int>&weight,vector<int>&value,int W){
         vector<vector<int>>dp(weight.size()+1,vector<int>(W+1,0));
@@ -61,6 +67,31 @@ class  knapsack_01{
       }
       return dp[weight.size()-1][W];
     }
+    //滚动数组解决01背包
+    //在一维数组dp中，dp[j]表示在背包容量为j的背包、所背的物品价值最大为dp[i];
+    //dp[j-weight[i]]+value[i]表示容量为j-物品i的重量，的背包中再放入价值为value[i]的物品
+    //dp[j]要么取自身的值，要么取dp[j-weight[i]]+value[i]的值，谁大取谁
+    //当j=0时，也就是背包重量为0，物品价值也就为0（因为没有物品可以放进去）即dp[0]=0;
+    //若物品价值部位负数则初始化为0，若物品价值有的为负数，则初始化为负无穷
+    //从第0个物品开始遍历，背包使用倒序遍历
+    //当第0个物品放入背包时，背包容量若是大于等于物品重量，就将物品0放入，当背包容量小于物品重量就代表放不进去了
+    //然后开始放第1个物品，以此类推
+    /*                      背包容量        
+                    0       1       2       3       4
+        物品0       0       15      15      15      15                                
+        物品1       0       15      15      20      35
+        物品2       0       15      15      20      35
+    */
+    int knapsack_roll(vector<int>&weight,vector<int>&value,int W){
+        vector<int>dp(W+1,0);
+        for(int i=0;i<weight.size();i++){//遍历物品
+            for(int j=W;j>=weight[i];j--){//遍历背包
+                dp[j]=max(dp[j],dp[j-weight[i]]+value[i]);
+            }
+        }
+        return dp[W];
+        
+    }
 };
 
 
@@ -75,6 +106,6 @@ void packFormat(){
     }
 
     knapsack_01 obj;
-    int val=obj.knapsack_01i(weight,value,W);
+    int val=obj.knapsack_roll(weight,value,W);//knapsack_01i(weight,value,W);
     cout<<val;
 }
