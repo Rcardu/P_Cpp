@@ -9,7 +9,7 @@
 #include"Algorithm//TransactionalFriendlyTreeSet.cpp"
 #include"Algorithm//knapsack_01.cpp"
 #include"Algorithm//SetNumberOfStreamDivisions.cpp"
-#include"Algorithm//SetNumberOfStreamDivisions.cpp"
+#include"Algorithm//milestone_title.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -19,7 +19,8 @@
 //void AppendFormat();
 //void TransactionalFormat();
 //void packFormat();
-void SetNumberOfStreamFormat();
+//void SetNumberOfStreamFormat();
+void milestoneFormat();
 
 int main(){
     //S_and_T();
@@ -31,7 +32,8 @@ int main(){
     //AppendFormat();
     //TransactionalFormat();
     //packFormat();
-    SetNumberOfStreamFormat();
+    //SetNumberOfStreamFormat();
+    milestoneFormat();
 
     while(getchar()!='\n')
     continue;
