@@ -20,6 +20,7 @@
 */
 #include<iostream>
 #include<vector>
+#include<numeric>
 
 using namespace std;
 
@@ -43,7 +44,7 @@ class Milestone{
 */
         int milestone(vector<int>&stone){
             int sum=0,weight=0;
-            for(int i=0;i<stone.size();i++)sum+=stone[i];
+            sum=accumulate(stone.begin(),stone.end(),0);
             weight=sum/2;
             vector<int>dp(weight+1,0);
             dp[0]=0;

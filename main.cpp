@@ -10,6 +10,7 @@
 #include"Algorithm//knapsack_01.cpp"
 #include"Algorithm//SetNumberOfStreamDivisions.cpp"
 #include"Algorithm//milestone_title.cpp"
+#include"Algorithm//EPriorityStandard.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -20,7 +21,8 @@
 //void TransactionalFormat();
 //void packFormat();
 //void SetNumberOfStreamFormat();
-void milestoneFormat();
+//void milestoneFormat();
+void EPriorityFormat();
 
 int main(){
     //S_and_T();
@@ -33,7 +35,8 @@ int main(){
     //TransactionalFormat();
     //packFormat();
     //SetNumberOfStreamFormat();
-    milestoneFormat();
+    //milestoneFormat();
+    EPriorityFormat();
 
     while(getchar()!='\n')
     continue;
