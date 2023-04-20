@@ -11,6 +11,7 @@
 #include"Algorithm//SetNumberOfStreamDivisions.cpp"
 #include"Algorithm//milestone_title.cpp"
 #include"Algorithm//EPriorityStandard.cpp"
+#include"Algorithm//OneAndZero.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -22,7 +23,8 @@
 //void packFormat();
 //void SetNumberOfStreamFormat();
 //void milestoneFormat();
-void EPriorityFormat();
+//void EPriorityFormat();
+void OneZeroFormat();
 
 int main(){
     //S_and_T();
@@ -36,7 +38,8 @@ int main(){
     //packFormat();
     //SetNumberOfStreamFormat();
     //milestoneFormat();
-    EPriorityFormat();
+    //EPriorityFormat();
+    OneZeroFormat();
 
     while(getchar()!='\n')
     continue;
