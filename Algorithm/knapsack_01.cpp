@@ -1,6 +1,21 @@
 /*
-有N件物品和⼀个最多能被重量为W 的背包。第i件物品的重量是weight[i]，得到的价值是
-value[i] 。每件物品只能⽤⼀次，求解将哪些物品装⼊背包⾥物品价值总和最⼤。
+有N件物品和⼀个最多能被重量为W 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品只能⽤⼀次，求解将哪些物品装⼊背包⾥物品价值总和最⼤。
+
+```cpp
+int knapsack_01(int W, int N, vector<int>& weight, vector<int>& value) {
+    vector<vector<int>> dp(N + 1, vector<int>(W + 1, 0));
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= W; j++) {
+            if (j - weight[i - 1] < 0) {
+                dp[i][j] = dp[i - 1][j];
+            } else {
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i - 1]] + value[i - 1]);
+            }
+        }
+    }
+    return dp[N][W];
+}
+```
 
 这是标准的背包问题，以⾄于很多同学看了这个⾃然就会想到背包，甚⾄都不知道暴⼒的解
 法应该怎么解了。
@@ -17,6 +32,19 @@ using namespace std;
 
 class  knapsack_01{
     public:
+    int knapsack_01s(int W, int N, vector<int>& weight, vector<int>& value) {
+    vector<vector<int>> dp(N + 1, vector<int>(W + 1, 0));
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= W; j++) {
+            if (j - weight[i - 1] < 0) {
+                dp[i][j] = dp[i - 1][j];
+            } else {
+                dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i - 1]] + value[i - 1]);
+            }
+        }
+    }
+    return dp[N][W];
+}
         //有i个物品，背包的容量为j，则dp[i][j]就是背包物品的最大价值
         /*              背包容量为j
             有i个物品   0   1   2   3   4

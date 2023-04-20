@@ -8,6 +8,8 @@
 #include"Algorithm//AppendSwitchWithInteger.cpp"
 #include"Algorithm//TransactionalFriendlyTreeSet.cpp"
 #include"Algorithm//knapsack_01.cpp"
+#include"Algorithm//SetNumberOfStreamDivisions.cpp"
+#include"Algorithm//SetNumberOfStreamDivisions.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -16,7 +18,8 @@
 //void shadow2Format();
 //void AppendFormat();
 //void TransactionalFormat();
-void packFormat();
+//void packFormat();
+void SetNumberOfStreamFormat();
 
 int main(){
     //S_and_T();
@@ -27,7 +30,8 @@ int main(){
     //shadow2Format();
     //AppendFormat();
     //TransactionalFormat();
-    packFormat();
+    //packFormat();
+    SetNumberOfStreamFormat();
 
     while(getchar()!='\n')
     continue;
