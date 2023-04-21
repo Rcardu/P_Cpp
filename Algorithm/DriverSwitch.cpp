@@ -22,6 +22,7 @@
 
 输出描述：
 	一个整数，表示整个过程中，资源管理器最多驻留的资源的数量。
+    ..
 */
 #include <iostream>
 #include<vector>

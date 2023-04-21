@@ -14,6 +14,8 @@
 #include"Algorithm//OneAndZero.cpp"
 #include"Algorithm//ACIILL.cpp"
 #include"Algorithm//DriverSwitch.cpp"
+#include"Algorithm//PointForJu.cpp"
+
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -28,7 +30,8 @@
 //void EPriorityFormat();
 //void OneZeroFormat();
 //void ASCIILFormat();
-void DriberSFormat();
+//void DriberSFormat();
+//
 
 int main(){
     //S_and_T();
@@ -45,7 +48,7 @@ int main(){
     //EPriorityFormat();
     //OneZeroFormat();
     //ASCIILFormat();
-    DriberSFormat();
+    //DriberSFormat();
 
     while(getchar()!='\n')
     continue;
