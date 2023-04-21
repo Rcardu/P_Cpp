@@ -13,6 +13,7 @@
 #include"Algorithm//EPriorityStandard.cpp"
 #include"Algorithm//OneAndZero.cpp"
 #include"Algorithm//ACIILL.cpp"
+#include"Algorithm//DriverSwitch.cpp"
 //void S_and_T();
 //void inputFormat();
 //void ClimbStairsFormat();
@@ -26,7 +27,8 @@
 //void milestoneFormat();
 //void EPriorityFormat();
 //void OneZeroFormat();
-void ASCIILFormat();
+//void ASCIILFormat();
+void DriberSFormat();
 
 int main(){
     //S_and_T();
@@ -42,7 +44,8 @@ int main(){
     //milestoneFormat();
     //EPriorityFormat();
     //OneZeroFormat();
-    ASCIILFormat();
+    //ASCIILFormat();
+    DriberSFormat();
 
     while(getchar()!='\n')
     continue;
