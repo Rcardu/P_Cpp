@@ -18,6 +18,7 @@
 #include"Algorithm//completelybackpack.cpp"
 #include"Algorithm//coindenominations.cpp"
 #include"Algorithm//resumehandling.cpp"
+#include"Algorithm//sprUpStairsBankNum.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -36,7 +37,8 @@
 //void DriberSFormat();
 //void CompleteForamt();
 //void CoindeFormat();
-void resumehandFormat();
+//void resumehandFormat();
+void sprUpStairsFormat();
 
 int main(){
     //S_and_T();
@@ -56,7 +58,8 @@ int main(){
     //DriberSFormat();
     //CompleteForamt();
     //CoindeFormat();
-    resumehandFormat();
+    //resumehandFormat();
+    sprUpStairsFormat();
 
     while(getchar()!='\n')
     continue;
