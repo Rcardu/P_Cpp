@@ -28,33 +28,42 @@
     对于第一种情况，取最大的矩形的x，y坐标即可
     统计所有矩形的四个坐标，并依次判断
 */
-int main(){
-    //矩形的个数
+#include <iostream>
+#include <vector>
+using namespace std;
+int MainFormat()
+{
+    // 矩形的个数
     int n;
-    cin>>n;
-    //存放矩形坐标，方式为左下，右上，左上，右下
-    vector<vector<int>>dp(n,vector<int>(4,0));
-    for(int i=0;i<n;i++){
-        for(int j=0;j<4;j++){
-            cin>>dp[i][j];
+    cin >> n;
+    // 存放矩形坐标，方式为左下，右上，左上，右下
+    vector<vector<int>> dp(n, vector<int>(4, 0));
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            cin >> dp[i][j];
         }
     }
-    //写入每一个矩形剩下的左上与右下的坐标
-    //方式为左上=(x2-x1,y2),右下(x2,y2-y1)
-    for(int i=0;i<n;i++){
-        vector<int>temp(4,0);
-        temp[0]=dp[i][2]-dp[i][0];
-        temp[1]=dp[i][3];
-        temp[2]=dp[i][2];
-        temp[3]=dp[i][3]-dp[i][1];
-        for(int j=0;j<4;j++){
+    // 写入每一个矩形剩下的左上与右下的坐标
+    // 方式为左上=(x2-x1,y2),右下(x2,y2-y1)
+    for (int i = 0; i < n; i++)
+    {
+        vector<int> temp(4, 0);
+        temp[0] = dp[i][2] - dp[i][0];
+        temp[1] = dp[i][3];
+        temp[2] = dp[i][2];
+        temp[3] = dp[i][3] - dp[i][1];
+        for (int j = 0; j < 4; j++)
+        {
             dp[i].push_back(temp[j]);
-        }     
+        }
     }
-    //先取x最小的坐标,以及最小坐标对应的y坐标
-    vector<int>x_min;
-    for(int i=0;i<n;i++){
-        x_min[i]=min(x_min[i],dp[i][0]);
+    // 先取x最小的坐标,以及最小坐标对应的y坐标
+    vector<int> x_min;
+    for (int i = 0; i < n; i++)
+    {
+        x_min[i] = min(x_min[i], dp[i][0]);
     }
-
+    return 0;
 }

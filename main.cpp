@@ -13,8 +13,9 @@
 #include"Algorithm//EPriorityStandard.cpp"
 #include"Algorithm//OneAndZero.cpp"
 #include"Algorithm//ACIILL.cpp"
-#include"Algorithm//DriverSwitch.cpp"
-#include"Algorithm//PointForJu.cpp"
+#include"DriverSwitch.cpp"
+#include"Algorithm//Point.cpp"
+#include"Algorithm//completelybackpack.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -31,7 +32,7 @@
 //void OneZeroFormat();
 //void ASCIILFormat();
 //void DriberSFormat();
-//
+void CompleteForamt();
 
 int main(){
     //S_and_T();
@@ -49,6 +50,7 @@ int main(){
     //OneZeroFormat();
     //ASCIILFormat();
     //DriberSFormat();
+    CompleteForamt();
 
     while(getchar()!='\n')
     continue;

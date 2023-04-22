@@ -29,7 +29,7 @@
 #include<queue>
 using namespace std;
 
-int main(){
+int mainl(){
     //资源个数，及操作个数
     int N,X;
     cin>>N>>X;
@@ -90,6 +90,8 @@ int main(){
     while(getchar()!='\n')
     continue;
     getchar();
+
+    return 0;
 }
 
 
