@@ -36,6 +36,7 @@ class resumehanding{
             dp[0]=1;//dp[0=1;当给出的数字数量为0时，只有一种方式
             for(int j=1;j<=target;j++){
                 for(int i=0;i<nums.size();i++){
+                    
                     if(j>=nums[i])dp[j]+=dp[j-nums[i]];//dp[j-nums[i]]+=dp[j-nums[i]],dp[j-nums[i]] is the number of ways to assemble the j'th bar by choosing the ith element.
                 }
             }
