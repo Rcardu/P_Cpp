@@ -13,9 +13,11 @@
 #include"Algorithm//EPriorityStandard.cpp"
 #include"Algorithm//OneAndZero.cpp"
 #include"Algorithm//ACIILL.cpp"
-#include"DriverSwitch.cpp"
+#include"Algorithm//DriverSwitch.cpp"
 #include"Algorithm//Point.cpp"
 #include"Algorithm//completelybackpack.cpp"
+#include"Algorithm//coindenominations.cpp"
+#include"Algorithm//resumehandling.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -32,7 +34,9 @@
 //void OneZeroFormat();
 //void ASCIILFormat();
 //void DriberSFormat();
-void CompleteForamt();
+//void CompleteForamt();
+//void CoindeFormat();
+void resumehandFormat();
 
 int main(){
     //S_and_T();
@@ -50,7 +54,9 @@ int main(){
     //OneZeroFormat();
     //ASCIILFormat();
     //DriberSFormat();
-    CompleteForamt();
+    //CompleteForamt();
+    //CoindeFormat();
+    resumehandFormat();
 
     while(getchar()!='\n')
     continue;

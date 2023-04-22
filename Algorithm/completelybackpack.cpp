@@ -42,7 +42,7 @@ class completelybackpack
         */
        //先遍历背包再遍历物品
        int completelybackpack_A(int W,vector<int>&weight,vector<int>&value){
-        vector<int>dp(W,0);
+        vector<int>dp(W+1,0);
         for(int j=0;j<=W;j++){
             for(int i=0;i<weight.size();i++){
                 if(j>=weight[i])dp[j]=max(dp[j],dp[j-weight[i]]+value[i]);
