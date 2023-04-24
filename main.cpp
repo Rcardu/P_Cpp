@@ -19,6 +19,9 @@
 #include"Algorithm//coindenominations.cpp"
 #include"Algorithm//resumehandling.cpp"
 #include"Algorithm//sprUpStairsBankNum.cpp"
+#include"Algorithm//Redeemchangeagain.cpp"
+#include"Algorithm//Exactlysquarednumber.cpp"
+#include"Algorithm//Wordsplitting.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -38,7 +41,10 @@
 //void CompleteForamt();
 //void CoindeFormat();
 //void resumehandFormat();
-void sprUpStairsFormat();
+//void sprUpStairsFormat();
+//void RedeemForamt();
+//void ExacltlysquraedForamt();
+void WordsplittingFormat();
 
 int main(){
     //S_and_T();
@@ -59,7 +65,10 @@ int main(){
     //CompleteForamt();
     //CoindeFormat();
     //resumehandFormat();
-    sprUpStairsFormat();
+    //sprUpStairsFormat();
+    //RedeemForamt();
+    //ExacltlysquraedForamt();
+    WordsplittingFormat();
 
     while(getchar()!='\n')
     continue;
