@@ -19,6 +19,7 @@
 #include"Algorithm//coindenominations.cpp"
 #include"Algorithm//resumehandling.cpp"
 #include"Algorithm//sprUpStairsBankNum.cpp"
+#include"Algorithm//Redeemchangeagain.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -38,7 +39,8 @@
 //void CompleteForamt();
 //void CoindeFormat();
 //void resumehandFormat();
-void sprUpStairsFormat();
+//void sprUpStairsFormat();
+void RedeemForamt();
 
 int main(){
     //S_and_T();
@@ -59,7 +61,8 @@ int main(){
     //CompleteForamt();
     //CoindeFormat();
     //resumehandFormat();
-    sprUpStairsFormat();
+    //sprUpStairsFormat();
+    RedeemForamt();
 
     while(getchar()!='\n')
     continue;
