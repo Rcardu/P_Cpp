@@ -20,6 +20,7 @@
 #include"Algorithm//resumehandling.cpp"
 #include"Algorithm//sprUpStairsBankNum.cpp"
 #include"Algorithm//Redeemchangeagain.cpp"
+#include"Algorithm//Exactlysquarednumber.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -40,7 +41,8 @@
 //void CoindeFormat();
 //void resumehandFormat();
 //void sprUpStairsFormat();
-void RedeemForamt();
+//void RedeemForamt();
+void ExacltlysquraedForamt();
 
 int main(){
     //S_and_T();
@@ -62,7 +64,8 @@ int main(){
     //CoindeFormat();
     //resumehandFormat();
     //sprUpStairsFormat();
-    RedeemForamt();
+    //RedeemForamt();
+    ExacltlysquraedForamt();
 
     while(getchar()!='\n')
     continue;
