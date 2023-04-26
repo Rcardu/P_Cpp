@@ -23,6 +23,7 @@
 #include"Algorithm//Exactlysquarednumber.cpp"
 #include"Algorithm//Wordsplitting.cpp"
 #include"MultipleBackpacks//FoundationS.cpp"
+#include"Practice//Robbery.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -46,7 +47,8 @@
 //void RedeemForamt();
 //void ExacltlysquraedForamt();
 //void WordsplittingFormat();
-void FounfationSFormat();
+//void FounfationSFormat();
+void RobberyForamt();
 
 int main(){
     //S_and_T();
@@ -71,7 +73,8 @@ int main(){
     //RedeemForamt();
     //ExacltlysquraedForamt();
     //WordsplittingFormat();
-    FounfationSFormat();
+    //FounfationSFormat();
+    RobberyForamt();
 
     while(getchar()!='\n')
     continue;
