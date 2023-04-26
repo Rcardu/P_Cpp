@@ -22,6 +22,7 @@
 #include"Algorithm//Redeemchangeagain.cpp"
 #include"Algorithm//Exactlysquarednumber.cpp"
 #include"Algorithm//Wordsplitting.cpp"
+#include"MultipleBackpacks//FoundationS.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -44,7 +45,8 @@
 //void sprUpStairsFormat();
 //void RedeemForamt();
 //void ExacltlysquraedForamt();
-void WordsplittingFormat();
+//void WordsplittingFormat();
+void FounfationSFormat();
 
 int main(){
     //S_and_T();
@@ -68,7 +70,8 @@ int main(){
     //sprUpStairsFormat();
     //RedeemForamt();
     //ExacltlysquraedForamt();
-    WordsplittingFormat();
+    //WordsplittingFormat();
+    FounfationSFormat();
 
     while(getchar()!='\n')
     continue;

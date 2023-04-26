@@ -1,5 +1,6 @@
 {//${fileBasenameNoExtension}.exe
     "configurations": [
+        
         {
             "name": "C/C++: g++.exe 生成和调试活动文件",
             "type": "cppdbg",
@@ -11,7 +12,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "gdb",
-            "miDebuggerPath": "D:\\software\\VsCode\\mingw64\\bin\\gdb.exe",
+            "miDebuggerPath": "D:\\software\\VsCode\\mingw64\\bin\\gdb.exe",//"/usr/bin/gcc",//
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
