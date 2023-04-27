@@ -27,6 +27,7 @@
 #include"Practice//Robbery.cpp"
 #include"Practice//Robbery2.cpp"
 #include"Practice//Robbery3.cpp"
+#include"Practice//ShareBuyingTable.cpp"
 
 
 //void S_and_T();
@@ -55,7 +56,8 @@
 //void RobberyForamt();
 //void Robbery2Format();
 //void Treesmain();
-void Robbery3Format();
+//void Robbery3Format();
+void ShareBuyingFormat();
 
 int main(){
     //S_and_T();
@@ -84,7 +86,8 @@ int main(){
     //RobberyForamt();
     //Robbery2Format();
     //Treesmain();
-    Robbery3Format();
+    //Robbery3Format();
+    ShareBuyingFormat();
 
     while(getchar()!='\n')
     continue;
