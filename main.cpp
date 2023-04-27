@@ -24,6 +24,9 @@
 #include"Algorithm//Wordsplitting.cpp"
 #include"MultipleBackpacks//FoundationS.cpp"
 #include"Practice//Robbery.cpp"
+#include"Practice//Robbery2.cpp"
+//#include"Practice//Robbery3.cpp"
+#include"TreeNodes.cpp"
 
 //void S_and_T();
 //void inputFormat();
@@ -48,7 +51,9 @@
 //void ExacltlysquraedForamt();
 //void WordsplittingFormat();
 //void FounfationSFormat();
-void RobberyForamt();
+//void RobberyForamt();
+//void Robbery2Format();
+void Treesmain();
 
 int main(){
     //S_and_T();
@@ -74,7 +79,9 @@ int main(){
     //ExacltlysquraedForamt();
     //WordsplittingFormat();
     //FounfationSFormat();
-    RobberyForamt();
+    //RobberyForamt();
+    //Robbery2Format();
+    Treesmain();
 
     while(getchar()!='\n')
     continue;
