@@ -1,7 +1,10 @@
+#ifndef _BASESMOOTHINGALGORITHM_H_
+#define _BASESMOOTHINGALGORITHM_H_
 #include<iostream>
 #include<list>
 #include<stack>
 #include<queue>
+#endif
 
 using namespace std;
 
@@ -249,7 +252,9 @@ int BiTree<T>::height(BiTreeNode<T>*node){
     int right_hight=height(node->right);
     return max(left_hight,right_hight)+1;
 }
-
+/*
+使用数组建立二叉树
+*/
 template <typename T>
 void BiTree<T>::CreateBiTree(T S[],int sub,int len,BiTreeNode<T>* &root){
     if((S[0]=='#')||len==0)//对特殊情况进行分析，例如输入空数组，或者'#'开头的数组
@@ -265,25 +270,4 @@ void BiTree<T>::CreateBiTree(T S[],int sub,int len,BiTreeNode<T>* &root){
         CreateBiTree(S,sub*2+2,len,root->right);    //建立右子树
     }
 }
-void Treesmain(){
 
-    int data[]={3,2,3,'#',3,'#',1};
-    //当前数组位置
-    int sub=0;
-    //数组长度
-    int len=sizeof(data)/sizeof(data[0]);
-    BiTree<int>* biTree=new BiTree<int>();
-    biTree->CreateBiTree(data,sub,len,biTree->root);
-    /*构建二叉树:
-        3
-    6       2
-   8  9
-    */
-   list<int> l;
-   list<int>::iterator iter;
-   biTree->preorderR(biTree->root,&l);
-   for(iter=l.begin();iter!=l.end();iter++)
-   cout<<*iter<<"  ";
-   l.clear();
-
-}

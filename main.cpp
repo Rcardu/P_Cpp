@@ -1,4 +1,5 @@
 #include<iostream>
+#include"Practice//TreeNodes.cpp"
 #include"Algorithm//varl.cpp"
 #include"Algorithm//fibonacciNumbers.cpp"
 #include"Algorithm//ClimbStairs.cpp"
@@ -25,8 +26,8 @@
 #include"MultipleBackpacks//FoundationS.cpp"
 #include"Practice//Robbery.cpp"
 #include"Practice//Robbery2.cpp"
-//#include"Practice//Robbery3.cpp"
-#include"TreeNodes.cpp"
+#include"Practice//Robbery3.cpp"
+
 
 //void S_and_T();
 //void inputFormat();
@@ -53,7 +54,8 @@
 //void FounfationSFormat();
 //void RobberyForamt();
 //void Robbery2Format();
-void Treesmain();
+//void Treesmain();
+void Robbery3Format();
 
 int main(){
     //S_and_T();
@@ -81,10 +83,11 @@ int main(){
     //FounfationSFormat();
     //RobberyForamt();
     //Robbery2Format();
-    Treesmain();
+    //Treesmain();
+    Robbery3Format();
 
     while(getchar()!='\n')
     continue;
     getchar();
     return 0;
-}
+  }
