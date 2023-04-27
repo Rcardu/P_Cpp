@@ -22,15 +22,16 @@ using namespace std;
 template<typename S>
 class ShareBuyingTable{
 public:
-    
+    //暴力递归  时间O(n^2)    空间O(1)
     int ShareBuyingTable_A(vector<S>&share);
-    //贪心算法
+    //贪心算法  时间O(n)    空间O(1)
     int ShareBuyingTable_B(vector<S>&share);
-    //动态规划
+    //动态规划  时间O(n)    空间O(n)
    int ShareBuyingTable_C(vector<S>&share);
+   //动态规划滚动数组   时间O(n)    空间O(1)
+   int ShareBuyingTable_C1(vector<S>&share);
 
 };
-//暴力递归  时间O(n^2)    空间O(1)
 //暴力递归找最大间距
     //从0开始遍历所有
     //从0+1开始遍历所有
@@ -46,7 +47,6 @@ int ShareBuyingTable<S>::ShareBuyingTable_A(vector<S>&share){
     }
     return result;
 }
-//贪心算法  时间O(n)    空间O(1)
 //因为股票只买一次，贪心算法就是取最左边的最小值，取最右边的最大值
 template<typename S>
 int ShareBuyingTable<S>::ShareBuyingTable_B(vector<S>&share){
@@ -92,6 +92,17 @@ int ShareBuyingTable<S>::ShareBuyingTable_C(vector<S>&share){
     }
     return dp[share.size()-1][1];
 }
+template<typename S>
+int ShareBuyingTable<S>::ShareBuyingTable_C1(vector<S>&share){
+    vector<vector<int>>dp(2,vector<int>(2));
+    dp[0][0]=-share[0];
+    dp[0][1]=0;
+    for(int i=1;i<share.size();i++){
+        dp[i%2][0]=max(-share[i],dp[(i-1)%2][0]);
+        dp[i%2][1]=max(share[i]+dp[(i-1)%2][0],dp[(i-1)%2][1]);
+    }
+    return dp[1][1];
+}
 
 
 //输入输出 
@@ -108,7 +119,8 @@ void ShareBuyingFormat(){
     ShareBuyingTable<int> shares;
     //int vale=shares.ShareBuyingTable_A(share);
     //int vale=shares.ShareBuyingTable_B(share);
-    int vale=shares.ShareBuyingTable_C(share);
+    //int vale=shares.ShareBuyingTable_C(share);
+    int vale=shares.ShareBuyingTable_C1(share);
     cout<<vale;
 \
 
