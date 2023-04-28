@@ -1,4 +1,5 @@
 #include<iostream>
+#include"Practice//TreeNodes.cpp"
 #include"Algorithm//varl.cpp"
 #include"Algorithm//fibonacciNumbers.cpp"
 #include"Algorithm//ClimbStairs.cpp"
@@ -22,6 +23,15 @@
 #include"Algorithm//Redeemchangeagain.cpp"
 #include"Algorithm//Exactlysquarednumber.cpp"
 #include"Algorithm//Wordsplitting.cpp"
+#include"MultipleBackpacks//FoundationS.cpp"
+#include"Practice//Robbery.cpp"
+#include"Practice//Robbery2.cpp"
+#include"Practice//Robbery3.cpp"
+#include"Practice//ShareBuyingTable.cpp"
+#include"Practice//ShareBuyingTable2.cpp"
+#include"Practice//ShareBuyingTable3.cpp"
+#include"Practice//ShareBuyingTableect.cpp"
+
 
 //void S_and_T();
 //void inputFormat();
@@ -44,7 +54,16 @@
 //void sprUpStairsFormat();
 //void RedeemForamt();
 //void ExacltlysquraedForamt();
-void WordsplittingFormat();
+//void WordsplittingFormat();
+//void FounfationSFormat();
+//void RobberyForamt();
+//void Robbery2Format();
+//void Treesmain();
+//void Robbery3Format();
+//void ShareBuyingFormat();
+//void ShareByingFormat2();
+//void ShareBuyingForamt3();
+void ShareBuyingFormatEct();
 
 int main(){
     //S_and_T();
@@ -68,10 +87,19 @@ int main(){
     //sprUpStairsFormat();
     //RedeemForamt();
     //ExacltlysquraedForamt();
-    WordsplittingFormat();
+    //WordsplittingFormat();
+    //FounfationSFormat();
+    //RobberyForamt();
+    //Robbery2Format();
+    //Treesmain();
+    //Robbery3Format();
+    //ShareBuyingFormat();
+    //ShareByingFormat2();
+    //ShareBuyingForamt3();
+    ShareBuyingFormatEct();
 
     while(getchar()!='\n')
     continue;
     getchar();
     return 0;
-}
+  }
