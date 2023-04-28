@@ -31,6 +31,7 @@
 #include"Practice//ShareBuyingTable2.cpp"
 #include"Practice//ShareBuyingTable3.cpp"
 #include"Practice//ShareBuyingTableect.cpp"
+#include"TheLongestAscendingSubsequence//TheLongestAscending.cpp"
 
 
 //void S_and_T();
@@ -63,7 +64,8 @@
 //void ShareBuyingFormat();
 //void ShareByingFormat2();
 //void ShareBuyingForamt3();
-void ShareBuyingFormatEct();
+//void ShareBuyingFormatEct();
+void TheLongesFormat();
 
 int main(){
     //S_and_T();
@@ -96,7 +98,8 @@ int main(){
     //ShareBuyingFormat();
     //ShareByingFormat2();
     //ShareBuyingForamt3();
-    ShareBuyingFormatEct();
+    //ShareBuyingFormatEct();
+    TheLongesFormat();
 
     while(getchar()!='\n')
     continue;
