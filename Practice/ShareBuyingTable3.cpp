@@ -34,8 +34,11 @@ using namespace std;
 template<typename T>
 class ShareBuyingTable3{
 public:
-    //动态规划
+    //动态规划 最多两笔交易
     int ShareBuyingTable3_A(vector<T>share);
+    //动态规划，最多k笔交易
+    int ShareBuyingTable4_A(vector<T>share,int k);
+
 };
 /*
 ***dp数组的含义
@@ -95,16 +98,69 @@ int ShareBuyingTable3<T>::ShareBuyingTable3_A(vector<T>share){
     }
     return dp[share.size()-1][4];
 }
+/*
+***dp数组
+0.不做任何操作
+1.第一次买入
+2.第一次卖出
+3.第二次买入
+4.第二次卖出
+...
+除0以外，偶数为买入，奇数为卖出
+最多有k笔交易，那么,j=2*k+1
+vector<vector<int>>dp(share.size(),vector<int>(2*k+1));
+***递推公式
+dp[i][1]:第i天买入的状态，也就是昨天卖出的状态加上今天要买入的，即dp[i-1][0]-share[i];没有操作就是昨天买入的状态dp[i-1][1];
+dp[i][2]:第i天卖出的状态，也就是昨天买入的状态加上今天的股票价格dp[i-1][1]+share[i];没有操作就是昨天卖出的状态dp[i-1][2];
+类比可知
+dp[i][j+1]=max(dp[i-1][j]-share[i],dp[i-1][j+1]);
+dp[i][j+2]=max(dp[i-1][j+1]+share[i],dp[i-1][j+2]);
+***初始化
+i是由前一天来决定的，但是j有奇偶之分
+dp[0][0]=0;
+dp[0][1]=-share[i];
+dp[0][2]=0;
+...
+可知当j除j=0的情况外
+dp[0][奇数]=-share[i];
+dp[0][偶数]=0;
+***遍历顺序
+第i天的状态取决于第i-1天的状态。也就是从前往后遍历
+***举例推导
+以[1 2 3 4 5 ] k=2为例
+        状态j：     不操作      买入        卖出        买入        卖出
+
+   下标     股票       0        1           2           3           4
+   0        1       0           -1          0           -1          0
+   1        2       0           -1          1           -1          1
+   2        3       0           -1          2           -1          2
+   3        4       0           -1          3           -1          3
+   4        5       0           -1          4           -1          4 
+*/
+template<typename T>
+int ShareBuyingTable3<T>::ShareBuyingTable4_A(vector<T>share,int k){
+    vector<vector<int>>dp(share.size(),vector<int>(2*k+1,0));
+    for(int j=1;j<2*k;j+=2){
+        dp[0][j]=-share[0];
+    }
+    for(int i=1;i<share.size();i++){
+        for(int j=0;j<2*k-1;j+=2){
+            dp[i][j+1]=max(dp[i-1][j]-share[i],dp[i-1][j+1]);
+            dp[i][j+2]=max(dp[i-1][j+1]+share[i],dp[i-1][j+2]);
+        }
+    }
+    return dp[share.size()-1][2*k];
+}
 
 //输入输出
 void ShareBuyingForamt3(){
-    int N;
-    cin>>N;
+    int N,k;
+    cin>>N>>k;
     vector<int>share(N);
     for(int i=0;i<N;i++)cin>>share[i];
 
     ShareBuyingTable3<int>shares;
-    int val=shares.ShareBuyingTable3_A(share);
+    //int val=shares.ShareBuyingTable3_A(share);
+    int val=shares.ShareBuyingTable4_A(share,k);
     cout<<val;
-
 }
