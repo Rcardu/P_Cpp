@@ -5,7 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}",
-                "${workspaceFolder}"
+                "D:/Project/project/P_C++/**",
+                "D:/Project/project/P_C++/TheLongestAscendingSubsequence/**",
+                "D:/software/VsCode/mingw64/include/**"
             ],
             "defines": [
                 "_DEBUG",
