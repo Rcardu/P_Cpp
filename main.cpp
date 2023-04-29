@@ -34,6 +34,7 @@
 #include"TheLongestAscendingSubsequence//TheLongestAscending.cpp"
 #include"TheLongestAscendingSubsequence//TheLongestAscending2.cpp"
 #include"TheLongestAscendingSubsequence//TheLongestAscending3.cpp"
+#include"TheLongestAscendingSubsequence//TheLongestCommonSubsequence.cpp"
 
 
 //void S_and_T();
@@ -69,7 +70,8 @@
 //void ShareBuyingFormatEct();
 //void TheLongesFormat();
 //void TheLongestAscending2Format();
-void ThelongestFormat3();
+//void ThelongestFormat3();
+void TheLongestCommonForamt();
 
 int main(){
     //S_and_T();
@@ -105,7 +107,8 @@ int main(){
     //ShareBuyingFormatEct();
     //TheLongesFormat();
     //TheLongestAscending2Format();
-    ThelongestFormat3();
+    //ThelongestFormat3();
+    TheLongestCommonForamt();
 
     while(getchar()!='\n')
     continue;
