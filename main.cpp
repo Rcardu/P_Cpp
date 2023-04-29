@@ -36,6 +36,7 @@
 #include"TheLongestAscendingSubsequence//TheLongestAscending3.cpp"
 #include"TheLongestAscendingSubsequence//TheLongestCommonSubsequence.cpp"
 #include"TheLongestAscendingSubsequence//DisjointLines.cpp"
+#include"TheLongestAscendingSubsequence//MaximumSuborderSum.cpp"
 
 
 //void S_and_T();
@@ -73,7 +74,8 @@
 //void TheLongestAscending2Format();
 //void ThelongestFormat3();
 //void TheLongestCommonForamt();
-void DisjoinLinesFormat();
+//void DisjoinLinesFormat();
+//void MaximumSuborderFormat();
 
 int main(){
     //S_and_T();
@@ -111,7 +113,8 @@ int main(){
     //TheLongestAscending2Format();
     //ThelongestFormat3();
     //TheLongestCommonForamt();
-    DisjoinLinesFormat();
+    //DisjoinLinesFormat();
+    //MaximumSuborderFormat();
 
     while(getchar()!='\n')
     continue;
