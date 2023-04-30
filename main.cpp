@@ -39,6 +39,7 @@
 #include"TheLongestAscendingSubsequence//MaximumSuborderSum.cpp"
 #include"TheLongestAscendingSubsequence//StringForDelete.cpp"
 #include"TheLongestAscendingSubsequence//EditString.cpp"
+#include"TheLongestAscendingSubsequence//PalindromicSubstring.cpp"
 
 
 //void S_and_T();
@@ -79,7 +80,8 @@
 //void DisjoinLinesFormat();
 //void MaximumSuborderFormat();
 //void StringForDeleteFormaat();
-void EditStringFormat();
+//void EditStringFormat();
+//void PalindromicFormat();
 
 int main(){
     //S_and_T();
@@ -120,7 +122,8 @@ int main(){
     //DisjoinLinesFormat();
     //MaximumSuborderFormat();
     //StringForDeleteFormaat();
-    EditStringFormat();
+    //EditStringFormat(); 
+    //PalindromicFormat();
 
     while(getchar()!='\n')
     continue;
