@@ -40,6 +40,7 @@
 #include"TheLongestAscendingSubsequence//StringForDelete.cpp"
 #include"TheLongestAscendingSubsequence//EditString.cpp"
 #include"TheLongestAscendingSubsequence//PalindromicSubstring.cpp"
+#include"TheLongestAscendingSubsequence//TheLongestPalindromicSubstring.cpp"
 
 
 //void S_and_T();
@@ -82,6 +83,7 @@
 //void StringForDeleteFormaat();
 //void EditStringFormat();
 //void PalindromicFormat();
+void TheLongestPalindromFormat();
 
 int main(){
     //S_and_T();
@@ -124,6 +126,7 @@ int main(){
     //StringForDeleteFormaat();
     //EditStringFormat(); 
     //PalindromicFormat();
+    TheLongestPalindromFormat();
 
     while(getchar()!='\n')
     continue;
